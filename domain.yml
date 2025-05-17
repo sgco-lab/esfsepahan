@@ -1,0 +1,32 @@
+version: "3.1"
+
+intents:
+  - ask_place
+  - ask_restaurant
+  - ask_tour
+  - ask_culture
+  - ask_services
+  - out_of_scope
+
+responses:
+  utter_ask_place:
+    - text: "اصفهان دارای مکان‌های تاریخی معروفی مثل سی‌وسه‌پل، میدان نقش جهان و کاخ چهل‌ستون است."
+
+  utter_ask_restaurant:
+    - text: "رستوران‌های سنتی معروف اصفهان شامل بریانی اعظم، شاندیز صفه و جوجه‌زرشک هستند."
+
+  utter_ask_tour:
+    - text: "برای مشاهده و رزرو تورهای اصفهان به بخش تورهای سایت ما مراجعه کنید."
+
+  utter_ask_culture:
+    - text: "اصفهان شهر فرهنگ، هنر، مینیاتور و صنایع دستی بی‌نظیره."
+
+  utter_ask_services:
+    - text: "ما خدمات متنوع گردشگری مثل تور، رزرو اقامت و راهنما در اصفهان ارائه می‌دیم."
+
+  utter_out_of_scope:
+    - text: "من فقط در مورد مکان‌های گردشگری و خدمات مربوط به شهر اصفهان پاسخ می‌دم."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
